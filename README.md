@@ -2,7 +2,7 @@
 
 A game about traveling to Japan to study Japanese.
 
-Written in [Twine2: Harlow3.2.2](https://twine2.neocities.org/).
+Written in [Twine: Harlowe](https://twine2.neocities.org/).
 
 I started developing this game to try plan the plot for my [Renpy](https://www.renpy.org/doc/html/) story [J-game](https://github.com/SG-mancer/J-game). 
 
@@ -27,24 +27,30 @@ It is a little bit of a simulator, that hopefully tells a nice rounded story.
 ---
 
 To play Gakko:
-1. download this repo (or just copy the html file)
-2. open the html file __Gakko.html__
-3. Gakko will then play in your browser
+* visit my itch.io game page (and play in the browser)
 
 
 ---
 ### Development (history) ###
 ---
 
+#### 2019 ####
 In 2019 I started making J-game. I hoped it would be a little bit like [Long live the Queen](https://games.renpy.org/game/long-live-the-queen) with the goal of choosing how you studies Japanese. 
 
 But, after building an example of game-loop.
 ![J-game screenshot](j-game.png)
 I felt J-game was boring, and pretty much all the choices of study ended with you failing to pass the exams. So I stopped, to re-think the story I wanted to tell with J-game.
 
+#### June 2021 ####
 Now in 2021, I wanted to try and flesh out the plot of J-game again. This time I decided to use Twine because developing a plot is a little easier when you can visualise the story whilst editing.
 ![Twine editor screenshot](twine.png)
 Twine also doesn't have as much coding requirement, that may be helpful in prototyping hooks/story-arcs.
+
+#### July 2021 ####
+I find it too hard to write the story. Often I get retrospective about my own year living in Japan as a language student, or daydream about alternative realities. These don't lead to any meaningful game plot etc.
+
+#### October 2021 ####
+Re-attacked the game from the idea of a time-table that has small adjustments made week to week to improve your experiences (though it is not very fun to just see planned events on a timetable)
 
 
 ---
