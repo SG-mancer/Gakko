@@ -52,6 +52,7 @@ I find it too hard to write the story. Often I get retrospective about my own ye
 #### October 2021 ####
 Re-attacked the game from the idea of a time-table that has small adjustments made week to week to improve your experiences (though it is not very fun to just see planned events on a timetable)
 
+![Twitter screenshot from July 2015](Twitter-Jul2015.png)
 
 ---
 ### Ideas ###
