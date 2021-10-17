@@ -9,8 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Gakko.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Gakko" startnode="1" creator="Twine" creator-version="2.3.13" ifid="7AD4CD34-5293-48E7-8449-4A762808B849" zoom="0.25" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="class" color="orange"></tw-tag>,<tw-tag name="extra" color="green"></tw-tag>,<tw-tag name="fitness" color="blue"></tw-tag>,<tw-tag name="social" color="yellow"></tw-tag>,<tw-tag name="story" color="red"></tw-tag>,<tw-tag name="study" color="green"></tw-tag>,<tw-tag name="work" color="purple"></tw-tag><tw-passagedata pid="1" name="Start" tags="story" position="100,106" size="100,100">{
-(display: &quot;Morning class&quot;)
+<tw-storydata name="Gakko" startnode="1" creator="Twine" creator-version="2.3.13" ifid="7AD4CD34-5293-48E7-8449-4A762808B849" zoom="0.6" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="class" color="orange"></tw-tag>,<tw-tag name="extra" color="green"></tw-tag>,<tw-tag name="fitness" color="blue"></tw-tag>,<tw-tag name="social" color="yellow"></tw-tag>,<tw-tag name="story" color="red"></tw-tag>,<tw-tag name="study" color="green"></tw-tag>,<tw-tag name="work" color="purple"></tw-tag><tw-passagedata pid="1" name="Start" tags="story" position="100,106" size="100,100">{
 (display: &quot;TimeTable&quot;)
 
 (display: &quot;Free weekend&quot;)
@@ -108,7 +107,7 @@
 (set: $f22 to &quot;&quot;)
 (set: $s22 to &quot;&quot;)
 (set: $su22 to &quot;&quot;)
-}</tw-passagedata><tw-passagedata pid="4" name="TimeTable" tags="" position="100,225" size="100,100">{
+}</tw-passagedata><tw-passagedata pid="4" name="TimeTable" tags="" position="300,350" size="100,100">{
 &lt;!-- displays the time table --&gt;
 =|=
  
@@ -304,8 +303,15 @@ if nothing planned, you get options to travel,
 or other spare of the moment events --&gt;
 (if: $su8 is &quot;&quot; and $su10 is &quot;&quot; and $su12 is &quot;&quot; and $su14 is &quot;&quot; and $su16 is &quot;&quot; and $su18 is &quot;&quot; and $su20 is &quot;&quot; and $su22 is &quot;&quot; and $s8 is &quot;&quot; and $s10 is &quot;&quot; and $s12 is &quot;&quot; and $s14 is &quot;&quot; and $s16 is &quot;&quot; and $s18 is &quot;&quot; and $s20 is &quot;&quot; and $s22 is &quot;&quot;)[
 Free weekend
+
+get a chance to go visit more of the 47 ToDoFuKen (prefectures)
+
+(for: each _p, ...(open-storylets:)&#39;s 1stTo4th)[
+(link-goto: _p&#39;s name)]
+
 ]
-}</tw-passagedata><tw-passagedata pid="8" name="Saturday arvo" tags="study social" position="1101,700" size="100,100">{
+}
+</tw-passagedata><tw-passagedata pid="8" name="Saturday arvo" tags="study social" position="1101,700" size="100,100">{
 &lt;!-- Waseda no mori on Saturday afternoons --&gt;
 (set: $s14 to &quot;Waseda&quot;)
 
@@ -316,14 +322,14 @@ Free weekend
 &lt;!-- Thursday evening class in Akihabara --&gt;
 (set: $th18 to &quot;lang&quot;)
 (set: $th20 to &quot;lang&quot;)
-}</tw-passagedata><tw-passagedata pid="10" name="Study before bed" tags="study" position="1101,99" size="100,100">{
+}</tw-passagedata><tw-passagedata pid="10" name="Study before bed" tags="study" position="1101,100.66666666666667" size="100,100">{
 &lt;!-- study before bed --&gt;
 (set: $m22 to &quot;study&quot;)
 (set: $t22 to &quot;study&quot;)
 (set: $w22 to &quot;study&quot;)
 (set: $th22 to &quot;study&quot;)
 &lt;!-- skips Fri, Sat, Sun --&gt;
-}</tw-passagedata><tw-passagedata pid="11" name="jogging" tags="fitness" position="1228,399" size="100,100">{
+}</tw-passagedata><tw-passagedata pid="11" name="jogging" tags="fitness" position="1226.3333333333333,395.6666666666667" size="100,100">{
 &lt;!-- an evening jog,
 maybe i should ask 4, 3, 2 nights a week? --&gt;
 (set: $m20 to &quot;jog&quot;)
@@ -341,6 +347,7 @@ maybe i should ask 4, 3, 2 nights a week? --&gt;
 (set: $s16 to &quot;Footsal&quot;)
 (set: $s18 to &quot;Drinks&quot;)
 (set: $s20 to &quot;Drinks&quot;)
+
 }</tw-passagedata><tw-passagedata pid="13" name="iClass" tags="study" position="1226,99" size="100,100">{
 &lt;!-- italki classes online 
 probably in the AM, 3 -5 times a week --&gt;
@@ -398,7 +405,22 @@ study a night or two a week at a cafe with a tutor --&gt;
 (set: $su14 to &quot;class&quot;)
 (set: $su16 to &quot;class&quot;)
 --&gt;
-}</tw-passagedata><tw-passagedata pid="24" name="week 0" tags="story" position="203,1395" size="100,100">30 Mar (monday)</tw-passagedata><tw-passagedata pid="25" name="calc" tags="" position="100,1024" size="100,100">
+}</tw-passagedata><tw-passagedata pid="24" name="week 0" tags="story" position="203,1395" size="100,100">30 Mar (monday)
+
+Ask about your background.
+It is a given you failed to launch when you moved away to Uni in 2002.
+After 5 or 6 weeks you were back home, all your things were stolen (computer, books, dreamcast, gameboy, dungeons and dragons, figurines etc...)
+
+Then you recouped and got a job as:
+* Labourer
+* Bike Mechanic
+* Baggage handler
+
+That got you enough cash to travel a little, see Australia and then a little corner of the world.
+
+But rather than spend your savings on a deposit for a house, you investigate living overseas for a year or two learning the language, and hopefully the opportunities that can create.
+
+(not to be autobiographical, but maybe should include problems with love life, and how you only got a girlfriend a few months before leaving...?)</tw-passagedata><tw-passagedata pid="25" name="calc" tags="" position="100,1024" size="100,100">{
 (set: _test to (a: $m8, $t8, $w8, $th8, $f8, $s8, $su8, 
 $m10, $t10, $w10, $th10, $f10, $s10, $su10, 
 $m12, $t12, $w12, $th12, $f12, $s12, $su12,
@@ -414,14 +436,17 @@ $m22, $t22, $w22, $th22, $f22, $s22, $su22))
 
 (count: _test, &quot;&quot;) free
 
+(count: _test, &quot;tutor&quot;) tutor
+
 &lt;!-- idea is to have low skill scores, as in if study and class are over a number you get 1 point.
 If free time is less than a number you take a penalty... --&gt;
 
 &lt;!-- stress rises and you can burn out.
 if you burn out, you get presented with options to drop things you planned.
-i.e. Friday class, work... --&gt;</tw-passagedata><tw-passagedata pid="26" name="Apartment" tags="" position="626,247" size="100,100">{
+i.e. Friday class, work... --&gt;
+}</tw-passagedata><tw-passagedata pid="26" name="Apartment" tags="" position="601,200.33333333333331" size="100,100">{
 &lt;!-- living in an apartment will give some advantages --&gt;
-}</tw-passagedata><tw-passagedata pid="27" name="Sharehouse" tags="" position="628,377" size="100,100">{
+}</tw-passagedata><tw-passagedata pid="27" name="Sharehouse" tags="" position="601.3333333333334,400.33333333333337" size="100,100">{
 &lt;!-- living in a sharehouse will give some advantages --&gt;
 }</tw-passagedata><tw-passagedata pid="28" name="Kitchen hand" tags="work social" position="1230,1000" size="100,100">{
 &lt;!-- part time job.
@@ -444,11 +469,12 @@ actually won&#39;t help you much --&gt;
 Pretty much is a failure as you feel your language skills aren&#39;t up to scratch, and the dates take a bit of work... --&gt;
 }</tw-passagedata><tw-passagedata pid="34" name="Cafe before class" tags="study" position="1478,74" size="100,100">{
 &lt;!-- go to a cafe before/after class and try to study some --&gt;
+
 }</tw-passagedata><tw-passagedata pid="35" name="Talking challenge" tags="study social" position="1478,672" size="100,100">{
 &lt;!-- like in the fluent in 3 months, set yourself problems to talk to people each day. i.e. ask directions etc. 
 This has limited study assistance - it is very miss (maybe hit 1 in 10)
 --&gt;
-}</tw-passagedata><tw-passagedata pid="36" name="Programming" tags="" position="1603,100" size="100,100">{
+}</tw-passagedata><tw-passagedata pid="36" name="Programming" tags="" position="1603,101.66666666666667" size="100,100">{
 
 &lt;!-- focus on programming, rather than learning a language for 2 hours a day --&gt;
 
@@ -465,11 +491,33 @@ if high you drop one thing a day... --&gt;
 it increases stress based on your competence, though stress can make you take a stress increase even if you are competent --&gt;
 
 &lt;!-- also note, on exams weeks the exam populates in the time-table (you can drop it) --&gt;
-}</tw-passagedata><tw-passagedata pid="40" name="week 01" tags="" position="212,1601" size="100,100">6 Apr</tw-passagedata><tw-passagedata pid="41" name="week 02" tags="" position="334.33333333333326,1600.3333333333335" size="100,100">13 Apr</tw-passagedata><tw-passagedata pid="42" name="week 03" tags="" position="455,1602.0000000000002" size="100,100">20 Apr</tw-passagedata><tw-passagedata pid="43" name="week 04 - golden week" tags="" position="585.6666666666667,1601" size="100,100">&lt;!-- golden week, last week of April, first week of May --&gt;
-27 Apr</tw-passagedata><tw-passagedata pid="44" name="week 05 - golden week" tags="" position="708,1602" size="100,100">4 May (golden week) Enrol in JLPT</tw-passagedata><tw-passagedata pid="45" name="week 06" tags="" position="832,1602" size="100,100">11 May</tw-passagedata><tw-passagedata pid="46" name="week 07" tags="" position="960,1602" size="100,100">18 May</tw-passagedata><tw-passagedata pid="47" name="week 08" tags="" position="1088,1599.3333333333333" size="100,100">25 May</tw-passagedata><tw-passagedata pid="48" name="week 09" tags="" position="1224,1602" size="100,100">1 Jun</tw-passagedata><tw-passagedata pid="49" name="week 10" tags="" position="1352,1602" size="100,100">8 Jun</tw-passagedata><tw-passagedata pid="50" name="week 11" tags="" position="1476,1598" size="100,100">15 Jun</tw-passagedata><tw-passagedata pid="51" name="week 12 - 13 Holidays" tags="" position="212,1801.3333333333333" size="100,100">&lt;!-- ends with JLPT --&gt;</tw-passagedata><tw-passagedata pid="52" name="week 24" tags="" position="1460,2000.6666666666667" size="100,100">14 Sep</tw-passagedata><tw-passagedata pid="53" name="week 23" tags="" position="1335,2000.6666666666667" size="100,100">7 Sep</tw-passagedata><tw-passagedata pid="54" name="week 22" tags="" position="1206.6666666666667,1999.6666666666667" size="100,100">31 Aug</tw-passagedata><tw-passagedata pid="55" name="week 21" tags="" position="1080.6666666666667,1996.3333333333333" size="100,100">24 Aug</tw-passagedata><tw-passagedata pid="56" name="week 20" tags="" position="960.3333333333335,2000.6666666666667" size="100,100">17 Aug</tw-passagedata><tw-passagedata pid="57" name="week 19" tags="" position="831.6666666666667,2000.6666666666667" size="100,100">10 Aug</tw-passagedata><tw-passagedata pid="58" name="week 18" tags="" position="706.3333333333333,2000.6666666666667" size="100,100">3 Aug</tw-passagedata><tw-passagedata pid="59" name="week 17" tags="" position="582,1999" size="100,100">27 Jul</tw-passagedata><tw-passagedata pid="60" name="week 16" tags="" position="460,2002.3333333333333" size="100,100">20 Jul</tw-passagedata><tw-passagedata pid="61" name="week 15" tags="" position="330.6666666666665,2000" size="100,100">13 Jul</tw-passagedata><tw-passagedata pid="62" name="week 14" tags="" position="207.33333333333326,2000.6666666666667" size="100,100">6 Jul</tw-passagedata><tw-passagedata pid="63" name="Week 25, 26 (2 weeks holidays)" tags="" position="333.33333333333326,2194.6666666666665" size="100,100">
-</tw-passagedata><tw-passagedata pid="64" name="week 28" tags="" position="332,2498" size="100,100">12 Oct</tw-passagedata><tw-passagedata pid="65" name="week 29" tags="" position="452,2498" size="100,100">19 Oct</tw-passagedata><tw-passagedata pid="66" name="week 30" tags="" position="572,2498" size="100,100">26 Oct</tw-passagedata><tw-passagedata pid="67" name="week 31" tags="" position="693.6666666666667,2498" size="100,100">2 Nov</tw-passagedata><tw-passagedata pid="68" name="week 32" tags="" position="812,2498" size="100,100">9 Nov</tw-passagedata><tw-passagedata pid="69" name="week 33" tags="" position="932,2498" size="100,100">16 Nov</tw-passagedata><tw-passagedata pid="70" name="week 34" tags="" position="1052,2498" size="100,100">23 Nov</tw-passagedata><tw-passagedata pid="71" name="week 35" tags="" position="1172,2498" size="100,100">30 Nov
+}</tw-passagedata><tw-passagedata pid="40" name="week 01" tags="" position="212,1601" size="100,100">6 Apr
+
+* In which you learn your long distance GF Haruko is actually in a relationship...</tw-passagedata><tw-passagedata pid="41" name="week 02" tags="" position="334,1600" size="100,100">13 Apr</tw-passagedata><tw-passagedata pid="42" name="week 03" tags="" position="455,1602" size="100,100">20 Apr
+
+Onigiri conundrum (what flavour is this one?)
+should you pick based on colour? Ask the storeman? eat something else?</tw-passagedata><tw-passagedata pid="43" name="week 04 - golden week" tags="" position="585,1601" size="100,100">&lt;!-- golden week, last week of April, first week of May --&gt;
+27 Apr</tw-passagedata><tw-passagedata pid="44" name="week 05 - golden week" tags="" position="708,1602" size="100,100">4 May (golden week) Enrol in JLPT
+
+(watch a Funashi special on travelling to Anartica)... inspire you to buy a TV?</tw-passagedata><tw-passagedata pid="45" name="week 06" tags="" position="832,1602" size="100,100">11 May
+
+The contents of the vending machines change to more cold drinks - no red lights on coffee cans :(
+No more cans of hot coffee in the vending machines... (will discover they are in the conbini still in a few weeks time)</tw-passagedata><tw-passagedata pid="46" name="week 07" tags="" position="960,1600.3333333333333" size="100,100">18 May</tw-passagedata><tw-passagedata pid="47" name="week 08" tags="" position="1088,1599" size="100,100">25 May</tw-passagedata><tw-passagedata pid="48" name="week 09" tags="" position="1224,1602" size="100,100">1 Jun</tw-passagedata><tw-passagedata pid="49" name="week 10" tags="" position="1352,1602" size="100,100">8 Jun</tw-passagedata><tw-passagedata pid="50" name="week 11" tags="" position="1476,1598" size="100,100">15 Jun</tw-passagedata><tw-passagedata pid="51" name="week 12 - 13 Holidays" tags="" position="212,1801" size="100,100">&lt;!-- ends with JLPT --&gt;</tw-passagedata><tw-passagedata pid="52" name="week 24" tags="" position="1460,2000" size="100,100">14 Sep</tw-passagedata><tw-passagedata pid="53" name="week 23" tags="" position="1335,2000" size="100,100">7 Sep</tw-passagedata><tw-passagedata pid="54" name="week 22" tags="" position="1206,1999" size="100,100">31 Aug</tw-passagedata><tw-passagedata pid="55" name="week 21" tags="" position="1080,1996" size="100,100">24 Aug</tw-passagedata><tw-passagedata pid="56" name="week 20" tags="" position="960,2000" size="100,100">17 Aug</tw-passagedata><tw-passagedata pid="57" name="week 19" tags="" position="831,2000" size="100,100">10 Aug</tw-passagedata><tw-passagedata pid="58" name="week 18" tags="" position="706,2000" size="100,100">3 Aug</tw-passagedata><tw-passagedata pid="59" name="week 17" tags="" position="582,1999" size="100,100">27 Jul
+
+discover hot coffee cans in the conbini...
+though there is also jido-cafe (automatic coffee machine coffee)</tw-passagedata><tw-passagedata pid="60" name="week 16" tags="" position="460,2002" size="100,100">20 Jul</tw-passagedata><tw-passagedata pid="61" name="week 15" tags="" position="330,2000" size="100,100">13 Jul</tw-passagedata><tw-passagedata pid="62" name="week 14" tags="" position="207,2000" size="100,100">6 Jul</tw-passagedata><tw-passagedata pid="63" name="Week 25, 26 (2 weeks holidays)" tags="" position="333,2194" size="100,100">
+</tw-passagedata><tw-passagedata pid="64" name="week 28" tags="" position="332,2498" size="100,100">12 Oct</tw-passagedata><tw-passagedata pid="65" name="week 29" tags="" position="452,2498" size="100,100">19 Oct</tw-passagedata><tw-passagedata pid="66" name="week 30" tags="" position="570.3333333333334,2498" size="100,100">26 Oct
+
+* Halloween weekend in Shibuya (or Harajuku).
+</tw-passagedata><tw-passagedata pid="67" name="week 31" tags="" position="693,2498" size="100,100">2 Nov</tw-passagedata><tw-passagedata pid="68" name="week 32" tags="" position="812,2498" size="100,100">9 Nov</tw-passagedata><tw-passagedata pid="69" name="week 33" tags="" position="932,2498" size="100,100">16 Nov</tw-passagedata><tw-passagedata pid="70" name="week 34" tags="" position="1052,2498" size="100,100">23 Nov</tw-passagedata><tw-passagedata pid="71" name="week 35" tags="" position="1172,2498" size="100,100">30 Nov
 &lt;!-- JLPT on Sunday --&gt;</tw-passagedata><tw-passagedata pid="72" name="week 36" tags="" position="1312,2494" size="100,100">7 Dec</tw-passagedata><tw-passagedata pid="73" name="week 37" tags="" position="1432,2494" size="100,100">14 Dec</tw-passagedata><tw-passagedata pid="74" name="week 38, 39, 40 Christmas, New Years, Coming of Age" tags="" position="200,2698" size="100,100"></tw-passagedata><tw-passagedata pid="75" name="week 42" tags="" position="336,2902" size="100,100">18 Jan</tw-passagedata><tw-passagedata pid="76" name="week 43" tags="" position="456,2902" size="100,100">25 Jan</tw-passagedata><tw-passagedata pid="77" name="week 44" tags="" position="576,2902" size="100,100">1 Feb</tw-passagedata><tw-passagedata pid="78" name="week 45" tags="" position="696,2902" size="100,100">8 Feb
-&lt;!-- valentines weekend --&gt;</tw-passagedata><tw-passagedata pid="79" name="week 46" tags="" position="816,2902" size="100,100">15 Feb</tw-passagedata><tw-passagedata pid="80" name="week 47" tags="" position="936,2902" size="100,100">22 Feb</tw-passagedata><tw-passagedata pid="81" name="week 48" tags="" position="1056,2902" size="100,100">29 Feb</tw-passagedata><tw-passagedata pid="82" name="week 49" tags="" position="1176,2902" size="100,100">7 Mar</tw-passagedata><tw-passagedata pid="83" name="week 50" tags="" position="1296,2902" size="100,100">14 Mar</tw-passagedata><tw-passagedata pid="84" name="week 51" tags="" position="1416,2902" size="100,100">21 Mar</tw-passagedata><tw-passagedata pid="85" name="week 52" tags="" position="208.66666666666652,3105.666666666667" size="100,100">28 Mar</tw-passagedata><tw-passagedata pid="86" name="week 27" tags="" position="204.5000000000001,2497.666666666667" size="100,100">5 Oct - enroll in JLPT</tw-passagedata><tw-passagedata pid="87" name="week 41" tags="" position="204.5000000000001,2896.3333333333335" size="100,100">11 Jan</tw-passagedata></tw-storydata>
+&lt;!-- valentines weekend --&gt;</tw-passagedata><tw-passagedata pid="79" name="week 46" tags="" position="816,2902" size="100,100">15 Feb</tw-passagedata><tw-passagedata pid="80" name="week 47" tags="" position="936,2902" size="100,100">22 Feb</tw-passagedata><tw-passagedata pid="81" name="week 48" tags="" position="1056,2902" size="100,100">29 Feb</tw-passagedata><tw-passagedata pid="82" name="week 49" tags="" position="1176,2902" size="100,100">7 Mar</tw-passagedata><tw-passagedata pid="83" name="week 50" tags="" position="1296,2902" size="100,100">14 Mar</tw-passagedata><tw-passagedata pid="84" name="week 51" tags="" position="1416,2902" size="100,100">21 Mar</tw-passagedata><tw-passagedata pid="85" name="week 52" tags="" position="208,3105" size="100,100">28 Mar</tw-passagedata><tw-passagedata pid="86" name="week 27" tags="" position="204,2497" size="100,100">5 Oct - enroll in JLPT</tw-passagedata><tw-passagedata pid="87" name="week 41" tags="" position="204,2896" size="100,100">11 Jan</tw-passagedata><tw-passagedata pid="88" name="visit Hokkaido" tags="" position="2400,98.66666666666663" size="100,100">{(storylet: when visits is 0)
+(exclusivity: 0)
+(urgency: 10)</tw-passagedata><tw-passagedata pid="89" name="visit Osaka" tags="" position="2400.0000000000005,298.66666666666663" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="90" name="visit Kyoto" tags="" position="2600,300.83333333333337" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="91" name="visit Aomori" tags="" position="2400,499.1666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="92" name="visit Iwate" tags="" position="2520,499.1666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="93" name="visit Miyagi" tags="" position="2640,499.1666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="94" name="visit Akita" tags="" position="2760,499.1666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="95" name="visit Yamagata" tags="" position="2880,499.1666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="96" name="visit Fukushima" tags="" position="3000,499.1666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="97" name="visit Yamaguchi" tags="" position="2880,1000.8333333333334" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="98" name="visit Wakayama" tags="" position="2880,875.8333333333334" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="99" name="visit Shizuoka" tags="" position="3240,750.8333333333334" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="100" name="visit Aichi" tags="" position="3360,750.8333333333334" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="101" name="visit Ibaraki" tags="" position="2401.6666666666665,625.8333333333334" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="102" name="visit Tochigi" tags="" position="2521.6666666666665,625.8333333333334" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="103" name="visit Gunma" tags="" position="2641.6666666666665,625.8333333333334" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="104" name="visit Saitama" tags="" position="2761.6666666666665,625.8333333333334" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="105" name="visit Chiba" tags="" position="2881.6666666666665,625.8333333333334" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="106" name="visit Kanagawa" tags="" position="3001.6666666666665,625.8333333333334" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="107" name="visit Tottori" tags="" position="2400,1000.8333333333334" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="108" name="visit Shimane" tags="" position="2520,1000.8333333333334" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="109" name="visit Okayama" tags="" position="2640,1000.8333333333334" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="110" name="visit Hiroshima" tags="" position="2760,1000.8333333333334" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="111" name="visit Niigata" tags="" position="2400,750.8333333333334" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="112" name="visit Toyama" tags="" position="2520,750.8333333333334" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="113" name="visit Ishikawa" tags="" position="2640,750.8333333333334" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="114" name="visit Fukui" tags="" position="2760,750.8333333333334" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="115" name="visit Miyazaki" tags="" position="2400,1400.8333333333335" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="116" name="visit Nagano" tags="" position="3000,750.8333333333334" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="117" name="visit Gifu" tags="" position="3120,750.8333333333334" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="118" name="visit Mie" tags="" position="2400,874.1666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="119" name="visit Shiga" tags="" position="2520,874.1666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="120" name="visit Hyogo" tags="" position="2640,874.1666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="121" name="visit Yamanashi" tags="" position="2880,754.1666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="122" name="visit Kagoshima" tags="" position="2525,1400.8333333333335" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="123" name="visit Okinawa" tags="" position="2401.666666666667,1599.166666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="124" name="visit Nara" tags="" position="2760,874.1666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="125" name="visit Tokushima" tags="" position="2401.6666666666665,1200.8333333333335" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="126" name="visit Kagawa" tags="" position="2521.6666666666665,1200.8333333333335" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="127" name="visit Ehime" tags="" position="2641.6666666666665,1200.8333333333335" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="128" name="visit Kochi" tags="" position="2761.6666666666665,1200.8333333333335" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="129" name="visit Fukuoka" tags="" position="2641.6666666666665,1397.5000000000002" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="130" name="visit Saga" tags="" position="2761.6666666666665,1397.5000000000002" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="131" name="visit Nagasaki" tags="" position="2881.6666666666665,1397.5000000000002" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="132" name="visit Kumamoto" tags="" position="3001.6666666666665,1397.5000000000002" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="133" name="visit Oita" tags="" position="3121.6666666666665,1397.5000000000002" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="134" name="visit Tokyo Islands*" tags="" position="3500,625.8333333333334" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="135" name="visit Mt Fuji*" tags="" position="3501.666666666667,750.8333333333334" size="100,100">early July to mid September is the offical climbing season.
+(week 14-23) with a 60% chance of rain, causing a non-climb</tw-passagedata><tw-passagedata pid="136" name="Change-Schedule" tags="" position="801.6666666666666,800" size="100,100">
+(for: each _p, ...(open-storylets:)&#39;s 1stTo4th)[
+(link-goto: _p&#39;s name)]
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,i=!1,a=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw a}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
